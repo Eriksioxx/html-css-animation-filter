@@ -119,15 +119,19 @@
 /* 10o esercizio */
 .ex-10-icon {
     font-size: 60px;
-    animation: exercise9 2s infinite;
+    animation: exercise10 4s infinite linear;
 }
-
-@keyframes exercise9
-from {
-    font-size: 30px;
+@keyframes exercise10 {
+0% {transform:rotate(0deg);
 }
-to {
-    font-size: 60px;
+25%{transform:rotate(90deg);
+}
+50%{transform:rotate(180deg);
+}
+75%{transform:rotate(270deg);
+}
+100%{transform:rotate(360deg);
+}
 }
 /* / 10o esercizio */
 
@@ -135,10 +139,25 @@ to {
 .ex-11-icon {
     font-size: 60px;
 }
+.ex-11-icon:hover {
+    animation: exercise11 2s linear;
+}
+@keyframes  exercise11 {
+    0% {transform:rotate(0deg);
+    }
+    25%{transform:rotate(90deg);
+    }
+    50%{transform:rotate(180deg);
+    }
+    75%{transform:rotate(270deg);
+    }
+    100%{transform:rotate(0deg);
+    }
+    }
 /* / 11o esercizio */
 
-
-.ex-12-button, .ex-13-button {
+/* 12o esercizio */
+.ex-12-button {
     position: relative;
     display: block;
     width: 200px;
@@ -151,7 +170,7 @@ to {
     text-align: center;
     text-decoration: none;
 }
-.ex-12-top-white, .ex-13-top-white {
+.ex-12-top-white {
     position: absolute;
     top: -10px;
     left: 10%;
@@ -159,7 +178,7 @@ to {
     width: 60px;
     height: 20px;
 }
-.ex-12-bottom-white, .ex-13-bottom-white {
+.ex-12-bottom-white {
     position: absolute;
     bottom: -10px;
     right: 20%;
@@ -167,8 +186,104 @@ to {
     width: 60px;
     height: 20px;
 }
-/* 12o esercizio */
+
+.ex-12-button .ex-12-top-white {
+    animation: exercise12 2s linear infinite;
+}
+
+.ex-12-button .ex-12-bottom-white {
+    animation: exercise12-1 2s linear infinite;
+}
+
+@keyframes exercise12 {
+    0% {top: -10px; left: 10%;
+    }
+    25%{top: -10px; left: 40%;
+    }
+    50%{top: -10px; left: 60%;
+    }
+    75%{top: -10px; left: 40%;
+    }
+    100%{top: -10px; left: 10%;
+    }
+    }
+
+@keyframes exercise12-1 {
+    0% {bottom: -10px; right: 20%;
+    }
+    25%{bottom: -10px; right: 40%;
+    }
+    50%{bottom: -10px; right: 60%;
+    }
+    75%{bottom: -10px; right: 40%;
+    }
+    100%{bottom: -10px; right: 20%;
+    }
+    }
 /* / 12o esercizio */
 
 /* 13o esercizio */
+.ex-13-button {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 70px;
+    text-transform: uppercase;
+    border: 3px solid #1b3c59;
+    color: #1b3c59;
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+.ex-13-top-white {
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+  
+}
+.ex-13-bottom-white {
+    position: absolute;
+    bottom: -10px;
+    right: 20%;
+    background: #f5f5f5;
+    width: 60px;
+    height: 20px;
+}
+
+.ex-13-button .ex-13-top-white {
+    animation: exercise13 4s linear infinite;
+}
+
+.ex-13-button .ex-13-bottom-white {
+    animation: exercise13-1 4s  infinite;
+}
+
+@keyframes exercise13 {
+    0% {top: -10px; left: 10%; 
+    }
+    25%{top: -10px; left: 90%; 
+    }
+    50%{top: 100%; left: 75%;
+    }
+    75%{top: 100%; left: 0%;  
+    }
+    100%{top: -10px; left: -10%; 
+    }
+}
+@keyframes exercise13-1 {
+    0% {bottom: -10px; right: 20%;
+    }
+    25%{bottom: -10px; right: 75%;
+    }
+    50%{bottom: 100%; right: 75%;
+    }
+    75%{bottom: 100%; right: -10%;
+    }
+    100%{bottom: -10px; right: -10%;
+    }
+    }
 /* / 13o esercizio */
