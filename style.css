@@ -93,6 +93,12 @@
 /* 8o esercizio */
 .ex-8-img {
     width: 500px;
+    transition: all 2s;
+}
+
+.ex-8-img:hover {
+    filter: sepia(90%) brightness(2);
+    border-radius: 30px;
 }
 /* / 8o esercizio */
 
@@ -100,6 +106,13 @@
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: all 2s;
+}
+
+.ex-9-img:hover {
+    filter: sepia(90%) brightness(2);
+    border-radius: 30px;
+    transform: scale(1.5);
 }
 /* / 9o esercizio */
 
