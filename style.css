@@ -119,6 +119,15 @@
 /* 10o esercizio */
 .ex-10-icon {
     font-size: 60px;
+    animation: exercise9 2s infinite;
+}
+
+@keyframes exercise9
+from {
+    font-size: 30px;
+}
+to {
+    font-size: 60px;
 }
 /* / 10o esercizio */
 
