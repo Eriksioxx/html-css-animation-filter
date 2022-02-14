@@ -259,7 +259,7 @@
 }
 
 .ex-13-button .ex-13-bottom-white {
-    animation: exercise13-1 4s  infinite;
+    animation: exercise13-1 4s linear infinite;
 }
 
 @keyframes exercise13 {
