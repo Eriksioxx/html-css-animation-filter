@@ -19,7 +19,7 @@
     transition: all 2s;
 }
 .ex-2-square:active {
-    transform: scale(2);
+    width: 100%;
 }
 
 /* / 2o esercizio */
